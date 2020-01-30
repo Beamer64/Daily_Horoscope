@@ -6,6 +6,8 @@ import org.jsoup.nodes.Element;
 
 import java.io.IOException;
 
+import static org.apache.commons.lang3.text.WordUtils.wrap;
+
 public class Horoscopes {
     
     String url = "https://www.ganeshaspeaks.com/horoscopes/daily-horoscope/";
@@ -80,7 +82,7 @@ public class Horoscopes {
         //finds horoscope description
         Element link = doc.select("p").get(2);
     
-        System.out.println(link.text());
+        System.out.println(wrap(link.text(), 75));
         Main.ScopeSelection();
     }
 }

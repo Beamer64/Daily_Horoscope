@@ -23,7 +23,7 @@ public class Main {
     
     public static int MainMenu() {
         System.out.println();
-        System.out.println("Choose a number for your Zodiac Sign");
+        System.out.println("Choose a number for your Zodiac Sign or type \"exit\" to end the application");
         
         System.out.print(" -------------------------------------\n");
         System.out.print("| (1.) Aries        (7. ) Libra       |\n");
@@ -36,6 +36,10 @@ public class Main {
         System.out.print("> ");
         String sign = TextIO.getln();
         System.out.println();
+        
+        if(sign.contains("exit")){
+        	System.exit(0);
+		}
         
         try {
 			//converts string input to int
