@@ -21,7 +21,7 @@ public class Main {
         ScopeSelection();
     }
     
-    private static int MainMenu() {
+    public static int MainMenu() {
         System.out.println();
         System.out.println("Choose a number for your Zodiac Sign");
         
