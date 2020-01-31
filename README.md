@@ -2,6 +2,8 @@
 Daily_Horoscope scrapes your personal horoscope from https://www.ganeshaspeaks.com/ and displays it in the console.
 For html document parsing I used the Jsoup library and apache commons library for some basic text editiing.
 
+![Screenshot](Screenshot.png)
+
 ## Future plans are to give the application a UI and possibly create a web app.
 
 ## Libraries
